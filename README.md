@@ -3,5 +3,6 @@
 mode serveur : ./serveur
 
 mode client : ./client2
+  
   _choix possible : pierre , feuille ,ciseaux 
 
