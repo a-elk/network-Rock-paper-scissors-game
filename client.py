@@ -228,6 +228,8 @@ def check_result(result):
             if (isinstance(choix, int) == 0):
                 choix = int.from_bytes(choix, 'big')
 
+            if(choix == x):
+                continue
             if (choix == 0 and x == 1)or(choix == 1 and x == 2)or(choix == 2 and x == 0):
                 v = v - 1
             else:
@@ -284,6 +286,8 @@ if __name__ == "__main__":
             print("jai gagné je reste")
             for x, j, y in resultat:
                 if y < 0:
+                    if(isinstance(j,int)):
+                        continue
                     j.close()
                     nb_joueurs = nb_joueurs - 1
                     for i in autre_joueurs:
