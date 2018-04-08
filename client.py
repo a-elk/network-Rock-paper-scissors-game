@@ -154,6 +154,11 @@ def genere_hash(autres_joueurs,nb_joueurs):
         elapsed = time.time() - start
         if (len(hash_all) == len(autre_joueurs)):
             break
+    if hash_all == []:
+        for i in autre_joueurs:
+            i.close()
+            autre_joueurs.remove(i)
+        return autre_joueurs, hash_all, 0, 0, 0
     if hash_all:
         k = -1
         for i in autre_joueurs:
@@ -225,6 +230,9 @@ def verification(verif,autre_joueurs,choix,nb_joueurs,hash_all):
                                 hash_all.remove(y)
     result.append([choix,0, 0])
     return result,nb_joueurs
+
+def force_exit():
+    print("plus de joeurs")
 
 def check_result(result):
     for i in result:
