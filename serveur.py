@@ -56,7 +56,8 @@ if __name__ == "__main__":
                 except Exception as e:
                     print("error send tuple")
                     print(e)
-            tuples_cl.append([port_cl, client.getsockname()[0]])
+            print("addr : {x}".format(x = client.getsockname()[0]))
+            tuples_cl.append([port_cl, client.getpeername()[0]])
 
         print("place rest : " + str(nb_place_rest))
         if(nb_place_rest == 0):

@@ -231,8 +231,6 @@ def verification(verif,autre_joueurs,choix,nb_joueurs,hash_all):
     result.append([choix,0, 0])
     return result,nb_joueurs
 
-def force_exit():
-    print("plus de joeurs")
 
 def check_result(result):
     for i in result:
