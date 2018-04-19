@@ -41,11 +41,13 @@
      
     Le serveur envois le msg udp sur le reseaux, comme décrit dans le protocole, jusqu'a a ce qu'il n y ait plus de places   disponilbes(spécifié par l'utilisateur), a chaque tentative de connexions au serveur par le client, le serveur lui envois le nombre de joueurs ayant joint la partie, puis le client lui repond en retour par son port, ensuite le serveur envois à ce client les addresse des joueurs qui se sont connectés avant lui si il y en a. si le nombre de place disponible atteint zéro, le serveur se deconnecte. et la partie commence entre les clients
      
-     Pour plus de details voir le protocole.
+     
+   Pour plus de details voir le protocole.
      
 3) difficultées rencontrées durant le projet 
   
-       problème durant la conversion du hash de int en bytes pour l'envoyer, ce qui ne fonctionnait pas avec les clients des autres langages.
+   
+      problème durant la conversion du hash de int en bytes pour l'envoyer, ce qui ne fonctionnait pas avec les clients des autres langages.
         
      
      
