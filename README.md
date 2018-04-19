@@ -1,11 +1,15 @@
 # pierre_feuille_ciseaux en reseaux
 
 1) Utilisation 
+  
   a) mode serveur : 
+      
       ./serveur.py
 
   b)mode client : 
+       
        ./client.py
+       
        choix possible : pierre , feuille ,ciseaux 
        
 
