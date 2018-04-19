@@ -19,17 +19,17 @@
   
   a) Organisation génerale
      
-     le module client.py contient le code du client, le module serveur.py contient le code mode serveur, le module hash.py        contient la fonction de hashage utilisée par les client, cette fonction permet de checker les choix de chaque client en      évitant la triche.
+     le module client.py contient le code du client, le module serveur.py contient le code mode serveur, le module hash.py   contient la fonction de hashage utilisée par les client, cette fonction permet de checker les choix de chaque client en évitant la triche.
      
   b) Organisation du module client.py 
      
      -La fonction udp_msg recois le msg udp du serveur qui permet de savoir le nombre de place disponible dans la partie.
      
-     -La fonction interact-s se connect au serveur après avoir reçu l'udp, envois le numéro de port de notre client au      serveur puis reçois le nombre de joueurs qui se sont connectés avant nous et reçois leurs addresses les unes à la suite       des autres. puis cette fonction retourne les adresse recus par le serveur.
+     -La fonction interact-s se connect au serveur après avoir reçu l'udp, envois le numéro de port de notre client au  serveur puis reçois le nombre de joueurs qui se sont connectés avant nous et reçois leurs addresses les unes à la suite       des autres. puis cette fonction retourne les adresse recus par le serveur.
      
      -La fonction extract_addr permet l'extraction et la conversion des bytes representant l'ip et le port en ascii et elle   renvois une listes avec les addresses ip/port des autres clients.
      
-     -La fonction genère joueurs se connecte à chaque joueur et accepte les connexions des autres joueurs qui se sont         connectés au serveur après nous.puis elle renvois une liste des sockets des tous les joueurs de la partie.
+     -La fonction genère joueurs se connecte à chaque joueur et accepte les connexions des autres joueurs qui se sont         connectés au serveur après nous. puis elle renvois une liste des sockets des tous les joueurs de la partie.
      
      -La fonction genère-hash genere la hash comme décrit dans le protcole l'envois aux autres joueurs et reçois pendant un   delais de 5 secondes le hash des autres joueurs.
      
@@ -45,6 +45,8 @@
      
 3) difficultées rencontrées durant le projet 
   
+        problème durant la conversion du hash de int en bytes pour l'envoyer, ce qui ne fonctionnait pas avec les clients des autres langages.
+        
      
      
   
